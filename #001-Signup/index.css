@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'rubik';
+    src: url('./assets/fonts/Rubik-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    font-family: 'rubik', sans-serif;
+}
+
+input {
+    font-family: inherit;
+    font-size: 1.0em;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-part {
+    width: 50%;
+    margin: auto;
+}
+
+.form-container {
+    background-color: #FFF2E2;
+    width: 80%;
+    margin: auto;
+    color: #FF9A90;
+    border-radius: 5px;
+    padding: 5vh 0;
+}
+
+.form-title {
+    text-align: center;
+    color: #E37B70;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.input-container {
+    width: 80%;
+    margin: 5vh auto;
+    font-size: 1.3em;
+}
+
+.input-container input {
+    width: 100%;
+    min-height: 40px;
+    margin-top: 10px;
+}
+
+.btn {
+    margin: auto;
+    display: block;
+    min-width: 20%;
+    font-size: 1.2em;
+    background-color: #A57CF4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    min-height: 40px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #5353CD;
+}
+
+.right-part {
+    width: 50%;
+    background: center / contain no-repeat url('./assets/img/background-image.jpg');
+}
+
+@media screen and (max-width: 1000px) {
+    .right-part {
+        display: none;
+    }
+
+    .left-part {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .left-part {
+        width: 100%;
+    }
+}
